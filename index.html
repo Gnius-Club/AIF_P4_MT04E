@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 4 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Integrar conocimientos de sesiones anteriores (entradas, salidas, sensores, lógica, variables, radio).</li>
+                                        <li>Planificar un proyecto de programación antes de su desarrollo.</li>
+                                        <li>Aplicar habilidades de resolución de problemas y depuración ('debugging').</li>
+                                        <li>Fomentar la creatividad al elegir y desarrollar un proyecto final.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes apliquen e integren los conocimientos adquiridos en las sesiones anteriores (entradas, salidas, sensores, lógica, variables, radio) para planificar, diseñar y programar un proyecto final de su elección a partir de varias opciones, fomentando la resolución de problemas y la creatividad.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un proyecto final funcional en MakeCode, elegido de una de las tres opciones (Podómetro, Alarma, Juego de Reacción) o uno propio, que integre al menos tres conceptos aprendidos en el curso.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>(Opcional) Hojas de papel para la planificación del proyecto.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode).</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Micro:bits).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional uno de los tres proyectos de ejemplo (Podómetro, Alarma o Juego) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y enmarca la sesión como el desafío final y más emocionante del curso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, inventores maestros! 👋 Han llegado a su desafío final y más emocionante. Han aprendido a darle a la micro:bit una voz, sentidos y la capacidad de comunicarse. Hoy, unirán todos esos poderes para crear su propia invención. ¡Es hora de demostrar todo lo que han aprendido! Antes de empezar, activen a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [crear videojuegos y los misterios]'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Xolo está listo para acompañarlos en este gran desafío. Si alguien no ha recibido respuesta, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el gran reto final, introducir las opciones de proyecto y establecer el objetivo de aprendizaje del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Gran Reto ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). El profesor plantea la misión final: los estudiantes se convierten en ingenieros y se introduce el concepto de 'depurar'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy no vamos a aprender un truco nuevo. ¡Hoy son ustedes los ingenieros! Su misión es construir un proyecto completo que combine al menos tres de las cosas que hemos visto: sensores, botones, la pantalla de LEDs, sonido, variables, lógica... ¡todo vale! Ser un inventor no solo es tener una idea, sino también planificarla, construirla, probarla y, a veces, arreglar los errores. Eso se llama 'depurar' o 'debugging', ¡y es una de las habilidades más importantes de un programador!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Opciones de Proyecto ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). El profesor presenta tres ideas de proyecto para inspirar a los estudiantes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para ayudarles a empezar, les propongo tres ideas de proyectos. Pueden elegir una de ellas o, si se sienten muy creativos, proponer su propia idea combinando elementos.<br>
+                                    1. <strong>El Podómetro Contador de Pasos:</strong> Usa el sensor de agitación para contar tus pasos y muestra el conteo en la pantalla.<br>
+                                    2. <strong>La Alarma Anti-Intrusos:</strong> Usa el sensor de movimiento o de luz. Si detecta algo inesperado, ¡suena una alarma!<br>
+                                    3. <strong>Juego de Reacción Rápida:</strong> Muestra una flecha al azar y el jugador debe inclinar la micro:bit en esa dirección lo más rápido posible.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: I Can Statement ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta formalmente el 'I Can Statement' para establecer la meta final del curso.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy van a ser creadores de principio a fin. Al final de la clase, podrán decir: <strong>'Yo pude planificar, programar y presentar un proyecto funcional que integra múltiples características de la micro:bit.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
+                <p>Xolo ofrece un repaso de las herramientas clave y da consejos profesionales sobre cómo planificar y depurar un proyecto.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 6). Presenta el A.I. GYM como una sesión de estrategia y da la instrucción a los alumnos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, antes de construir, vamos al A.I. GYM para una sesión de estrategia! 🧠💪 Xolo nos dará un repaso y algunos consejos de inventor profesional. Para que la explicación sea personalizada, escriban en el chat: 'Mi perfil es [escribe aquí tu perfil] y quiero un repaso y consejos para mi proyecto final de micro:bit'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: AI GYM ⏰ 9 minutos</h3>
+                            <p>(Proyectar Diapositivas 7, 8 y 9). Monitorea a los alumnos mientras interactúan con Xolo y reciben el repaso y los consejos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está recordando sus herramientas más poderosas: los bloques de 'Lógica', 'Variables' y 'Entrada'. Pero lo más importante son los consejos de inventor. Primero, ¡hacer un plan! No se lancen a programar sin pensar antes qué quieren lograr. Segundo, ¡no le tengan miedo a los errores o 'bugs'! Depurar es parte del proceso, como ser un detective que busca pistas. Xolo está aquí para ayudarles a encontrar esas pistas.</p>
+                                <p class="dialogue assistant">Para que vean cómo se estructura un plan, Xolo podría mostrarles un ejemplo para el Podómetro:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+// PLAN PARA EL PODÓMETRO
+// 1. ¿Qué hace? Cuenta pasos al agitarlo.
+// 2. ¿Qué entradas usa? El sensor de agitación.
+// 3. ¿Qué salidas realiza? Muestra un número en la pantalla.
+// 4. ¿Qué decisiones toma? NINGUNA por ahora (versión simple).
+
+// GCS BÁSICO
+AL INICIO:
+    fijar variable "pasos" a 0
+
+AL AGITAR:
+    aumentar variable "pasos" en 1
+    mostrar número variable "pasos"
+                                </pre>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle a Xolo! Prueben con: <br>
+                                <strong>* 'Xolo, ¿cómo puedo planificar mi idea de [tu idea de proyecto]?'</strong><br>
+                                <strong>* '¿Qué es un 'bug'?'</strong><br>
+                                <strong>* 'Dame un consejo para encontrar errores en mi código.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Los estudiantes eligen, planifican y construyen su proyecto final, con Xolo actuando como un asistente de depuración.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Elección y Planificación ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Los estudiantes eligen su proyecto y dedican tiempo a planificarlo siguiendo los consejos de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo de construcción, inventores! Lo primero es lo primero: elijan su proyecto. Puede ser una de las tres ideas que les di, o una propia. Una vez que tengan su idea, tomen 5 minutos para hacer un plan. Usen las preguntas que Xolo les sugirió: ¿Qué hace? ¿Qué entradas usa? ¿Qué salidas realiza? ¿Qué decisiones toma? ¡Un buen plan es la mitad del trabajo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Desarrollo y Programación ⏰ 15 minutos</h3>
+                            <p>Los estudiantes construyen su proyecto. El facilitador y Xolo asisten para desbloquear problemas específicos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Manos a la obra! Tomen su plan y comiencen a construirlo en MakeCode. Hoy, Xolo no les dará el plan completo, ¡ustedes son los ingenieros! Pero sí les ayudará si se atascan. Por ejemplo, si están haciendo el podómetro y ven que cuenta demasiado rápido, pueden preguntarle a Xolo: 'Mi contador de pasos aumenta muy rápido. ¿Qué puedo hacer?' Y Xolo les dará una pista, como añadir una pausa. Usen el simulador para probar y, cuando estén listos, descarguen el código a su micro:bit. Recuerden turnarse con su compañero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los estudiantes presentan sus proyectos en una "Feria de Inventores" y reflexionan sobre todo el proceso de aprendizaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¡La Feria de Inventores! ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11). El profesor abre la "Feria de Inventores" y los estudiantes presentan sus proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Atención, atención! ¡La Feria de Inventores está oficialmente abierta! Cada uno de ustedes va a presentar su proyecto en 30 segundos. Dígannos qué hace y muéstrennos cómo funciona. (El facilitador da la palabra a varios estudiantes para que hagan una rápida demostración de su podómetro, alarma, juego, etc.).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Cierre y Reflexión Final ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 12). El profesor y Xolo cierran el curso, felicitando a los estudiantes y consolidando las habilidades aprendidas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Estoy increíblemente impresionado! Miren todo lo que han construido. Han pasado de hacer parpadear un LED a crear dispositivos interactivos completos. Xolo, ¿qué te parece el trabajo de nuestros inventores? (Espera la respuesta de Xolo). Exactamente. La programación no es solo escribir código, es resolver problemas y dar vida a sus ideas. Las habilidades que han aprendido —lógica, planificación, depuración y creatividad— les servirán para cualquier desafío. ¡Felicidades por completar su entrenamiento como inventores de micro:bit!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
